@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --color-ink: #111111;
+  --color-ink-soft: #2e2a2a;
+  --color-paper: #f6f3ee;
+  --color-panel: #ffffff;
+  --color-muted: #6c6666;
+  --color-line: rgba(17, 17, 17, 0.12);
+  --color-accent: #f4c949;
+  --color-accent-strong: #eebd2f;
+  --shadow-soft: none;
+  --shadow-card: none;
+  --radius-card: 24px;
+  --radius-pill: 999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(244, 201, 73, 0.15), transparent 26%),
+    var(--color-paper);
+  color: var(--color-ink);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(244, 201, 73, 0.35);
+}
+
+@layer utilities {
+  .font-mont {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .font-mono-ui {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card-panel {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-card);
+  }
+}
