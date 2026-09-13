@@ -61,13 +61,6 @@ export default function Nav() {
           <Search width={14} height={14} className="text-[#4b4545]" />
         </div>
 
-        <NavLink
-          to="/contact"
-          className="hidden items-center justify-center rounded-full bg-[#f4c949] px-4 py-2.5 font-mont text-[10px] font-black uppercase tracking-[0.12em] text-[#111111] transition-colors duration-200 hover:bg-[#f0b700] md:inline-flex"
-        >
-          Get Started
-        </NavLink>
-
         <button
           onClick={() => setMenuOpen((o) => !o)}
           className="ml-auto flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white lg:ml-0 lg:hidden"
@@ -101,13 +94,6 @@ export default function Nav() {
                 {label}
               </NavLink>
             ))}
-            <NavLink
-              to="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="mt-4 flex items-center justify-center rounded-full bg-[#f4c949] px-4 py-3 font-mont text-[10px] font-black uppercase tracking-[0.12em] text-[#111111]"
-            >
-              Get Started
-            </NavLink>
           </nav>
         </div>
       )}

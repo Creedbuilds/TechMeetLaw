@@ -59,7 +59,7 @@ export default function AboutPage() {
               <div>
                 <p className="font-mono-ui text-[11px] uppercase tracking-[0.14em] text-[#6c6666]">The personal drive</p>
                 <h2 className="font-mont text-2xl font-black uppercase tracking-[-0.05em] text-[#111111] md:text-3xl">
-                  Why this exists
+                  Why WE exists
                 </h2>
               </div>
             </div>
